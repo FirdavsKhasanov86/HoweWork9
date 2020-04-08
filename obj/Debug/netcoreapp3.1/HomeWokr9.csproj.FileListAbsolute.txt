@@ -1,0 +1,10 @@
+/Users/user/Documents/AlifLessonNine/HomeWokr9/bin/Debug/netcoreapp3.1/HomeWokr9.deps.json
+/Users/user/Documents/AlifLessonNine/HomeWokr9/bin/Debug/netcoreapp3.1/HomeWokr9.runtimeconfig.json
+/Users/user/Documents/AlifLessonNine/HomeWokr9/bin/Debug/netcoreapp3.1/HomeWokr9.runtimeconfig.dev.json
+/Users/user/Documents/AlifLessonNine/HomeWokr9/bin/Debug/netcoreapp3.1/HomeWokr9.dll
+/Users/user/Documents/AlifLessonNine/HomeWokr9/bin/Debug/netcoreapp3.1/HomeWokr9.pdb
+/Users/user/Documents/AlifLessonNine/HomeWokr9/obj/Debug/netcoreapp3.1/HomeWokr9.csprojAssemblyReference.cache
+/Users/user/Documents/AlifLessonNine/HomeWokr9/obj/Debug/netcoreapp3.1/HomeWokr9.AssemblyInfoInputs.cache
+/Users/user/Documents/AlifLessonNine/HomeWokr9/obj/Debug/netcoreapp3.1/HomeWokr9.AssemblyInfo.cs
+/Users/user/Documents/AlifLessonNine/HomeWokr9/obj/Debug/netcoreapp3.1/HomeWokr9.dll
+/Users/user/Documents/AlifLessonNine/HomeWokr9/obj/Debug/netcoreapp3.1/HomeWokr9.pdb
