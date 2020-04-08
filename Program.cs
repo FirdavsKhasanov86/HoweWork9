@@ -42,6 +42,24 @@ namespace HomeWokr9
             //     Console.WriteLine(y);
             // }
 
+
+            //Medthood Shift
+            //string[] numbers = { "1", "2", "3", "4", "5",  };
+            //int [] numbers = {1,2,3,4,5,6,7,8};
+            //double[] numbers = {0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8};
+            //decimal[] numbers = {10.35m,12.35m,14.35m,16.35m};
+            // foreach (var y in numbers) 
+            // {
+            //     Console.WriteLine(y);
+            // }
+            // Console.WriteLine("------------------------------");
+            // ArrayHelper.Shift(ref numbers);
+            // foreach (var y in numbers)
+            // {
+            //     Console.WriteLine(y);
+            // }
+
+
             
         }
 
@@ -163,7 +181,61 @@ namespace HomeWokr9
             
         }
 
-       
+        public static string Shift(ref string[] stringArr)
+        {
+
+            string[] arr = new string[stringArr.Length-1];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = stringArr[i+1];
+
+            }
+            string s = stringArr[0];
+            stringArr = arr;
+            return s;
+        }
+
+        public static int Shift(ref int[] intArr)
+        {
+
+            int[] arr = new int[intArr.Length-1];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = intArr[i+1];
+
+            }
+            int s = intArr[0];
+            intArr = arr;
+            return s;
+        }
+
+        public static double Shift(ref double[] doubleArr)
+        {
+
+            double[] arr = new double[doubleArr.Length-1];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = doubleArr[i+1];
+
+            }
+            double s = doubleArr[0];
+            doubleArr = arr;
+            return s;
+        }
+
+        public static decimal Shift(ref decimal[] decimalArr)
+        {
+
+            decimal[] arr = new decimal[decimalArr.Length-1];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = decimalArr[i+1];
+
+            }
+            decimal s = decimalArr[0];
+            decimalArr = arr;
+            return s;
+        }
     }
 
 
