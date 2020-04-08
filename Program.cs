@@ -59,6 +59,23 @@ namespace HomeWokr9
             //     Console.WriteLine(y);
             // }
 
+            //Medthood UnShift
+            //string[] numbers = { "1", "2", "3", "4", "5",  };
+            //int [] numbers = {1,2,3,4,5,6,7,8};
+            //double[] numbers = {0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8};
+            //decimal[] numbers = {10.35m,12.35m,14.35m,16.35m};
+            // foreach (var y in numbers) 
+            // {
+            //     Console.WriteLine(y);
+            // }
+            // Console.WriteLine("------------------------------");
+            //ArrayHelper.UnShift(ref numbers,"0");
+             //ArrayHelper.UnShift(ref numbers, 0);
+            //  ArrayHelper.UnShift(ref numbers, 8.35m);
+            // foreach (var y in numbers)
+            // {
+            //     Console.WriteLine(y);
+            // }
 
             
         }
@@ -235,6 +252,50 @@ namespace HomeWokr9
             decimal s = decimalArr[0];
             decimalArr = arr;
             return s;
+        }
+
+         public static void UnShift(ref string[] stringArr, string mac)
+        {
+            string[] arr = new string[stringArr.Length + 1];
+            arr[0] = mac;
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                arr[i+1] = stringArr[i];
+            }
+            stringArr = arr;
+        }
+
+        public static void UnShift(ref int[] intArr, int mac)
+        {
+            int[] arr = new int[intArr.Length + 1];
+            arr[0] = mac;
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                arr[i+1] = intArr[i];
+            }
+            intArr = arr;
+        }
+
+        public static void UnShift(ref double[] doubleArr, double mac)
+        {
+            double[] arr = new double[doubleArr.Length + 1];
+            arr[0] = mac;
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                arr[i+1] = doubleArr[i];
+            }
+            doubleArr = arr;
+        }
+
+        public static void UnShift(ref decimal[] decimalArr, decimal mac)
+        {
+            decimal[] arr = new decimal[decimalArr.Length + 1];
+            arr[0] = mac;
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                arr[i+1] = decimalArr[i];
+            }
+            decimalArr = arr;
         }
     }
 
