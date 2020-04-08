@@ -21,6 +21,27 @@ namespace HomeWokr9
             // {
             //     Console.WriteLine(y);
             // }
+
+
+            //Medthood Push
+            //string[] numbers = { "1", "2", "3", "4", "5",  };
+            //int [] numbers = {1,2,3,4,5,6,7,8};
+           //  double[] numbers = {0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8};
+            // decimal[] numbers = {10.35m,12.35m,14.35m,16.35m};
+            // foreach (var y in numbers) 
+            // {
+            //     Console.WriteLine(y);
+            // }
+            // Console.WriteLine("------------------------------");
+            //ArrayHelper.Push(ref numbers, "6");
+            //ArrayHelper.Push(ref numbers, 9);
+             // ArrayHelper.Push(ref numbers, 0.9);
+             // ArrayHelper.Push(ref numbers, 18.35m);
+            // foreach (var y in numbers)
+            // {
+            //     Console.WriteLine(y);
+            // }
+
             
         }
 
@@ -83,7 +104,64 @@ namespace HomeWokr9
             return d;
 
         }
+       
+       public static void Push(ref string[] stringArr,string mac)
+        {
 
+            string[] arr = new string[stringArr.Length + 1];
+            for (int i = 0; i < stringArr.Length; i++)
+            {
+                arr[i] = stringArr[i];
+
+            }
+            arr[arr.Length - 1] = mac;
+            stringArr = arr;
+        }
+
+        public static  void Push(ref int[] intArr, int mac)
+        {
+
+            int[] arr = new int[intArr.Length + 1];
+            for (int i = 0; i < intArr.Length; i++)
+            {
+                arr[i] = intArr[i];
+
+            }
+            arr[arr.Length - 1] = mac;
+            intArr = arr;
+
+            
+        }
+
+        public static  void Push(ref double[] doubleArr, double mac)
+        {
+
+            double[] arr = new double[doubleArr.Length + 1];
+            for (int i = 0; i < doubleArr.Length; i++)
+            {
+                arr[i] = doubleArr[i];
+
+            }
+            arr[arr.Length - 1] = mac;
+            doubleArr = arr;
+
+            
+        }
+
+        public static  void Push(ref decimal[] decimalArr, decimal mac)
+        {
+
+            decimal[] arr = new decimal[decimalArr.Length + 1];
+            for (int i = 0; i < decimalArr.Length; i++)
+            {
+                arr[i] = decimalArr[i];
+
+            }
+            arr[arr.Length - 1] = mac;
+            decimalArr = arr;
+
+            
+        }
 
        
     }
